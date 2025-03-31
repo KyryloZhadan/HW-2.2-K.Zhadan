@@ -1,3 +1,5 @@
+from operator import truediv
+
 decision = True
 while decision:
     number_1 = float(input('Enter first number:'))
@@ -16,4 +18,8 @@ while decision:
         print(number_1 * number_2)
     else:
         print('Unknown action')
-    decision = input('Continue? "y" for yes, any button for no:') == 'y' or 'Y'
+    decision = input('Continue? "y" for yes, any text for no:')
+    if decision.lower() == 'y' or decision.lower() == 'yes':
+        decision = True
+    else:
+        decision = False
