@@ -1,5 +1,3 @@
-from operator import truediv
-
 decision = True
 while decision:
     number_1 = float(input('Enter first number:'))
